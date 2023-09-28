@@ -19,7 +19,7 @@ function App() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`https://schoolsystem-server-c1f6c7cfb830.herokuapp.com//classroom/list`, {
+    fetch(`https://schooolsystem-server-8283c61a8afc.herokuapp.com/classroom/list`, {
       method: "GET",
     }).then(async (response) => {
       const responseJson = await response.json();

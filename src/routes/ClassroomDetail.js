@@ -19,7 +19,7 @@ const ClassroomDetail = () => {
         setClassroomLoadCall({
             state: "pending",
         });
-        fetch(`https://schoolsystem-server-c1f6c7cfb830.herokuapp.com//classroom/load?id=${classroomId}`, {
+        fetch(`https://schooolsystem-server-8283c61a8afc.herokuapp.com/classroom/load?id=${classroomId}`, {
             method: "GET",
         }).then(async (response) => {
             const responseJson = await response.json();
