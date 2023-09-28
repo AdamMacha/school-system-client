@@ -67,7 +67,7 @@ function StudentSubjectGradeList({ student, subject, classroom, disabled }) {
     setDeleteGradeError('');
 
     const res = await fetch(
-      `http://localhost:3000/grade/list?subjectId=${subject.id}&studentId=${student.id}`
+      `https://schoolsystem-server-c1f6c7cfb830.herokuapp.com//grade/list?subjectId=${subject.id}&studentId=${student.id}`
     );
     const data = await res.json();
 

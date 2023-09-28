@@ -14,7 +14,7 @@ export default function StudentGradeDelete({ grade, onDelete, onError }) {
 
         setDeleteGradeCall({ state: 'pending' });
 
-        const res = await fetch(`http://localhost:3000/grade/delete`, {
+        const res = await fetch(`https://schoolsystem-server-c1f6c7cfb830.herokuapp.com//grade/delete`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

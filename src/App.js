@@ -19,7 +19,7 @@ function App() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/classroom/list`, {
+    fetch(`https://schoolsystem-server-c1f6c7cfb830.herokuapp.com//classroom/list`, {
       method: "GET",
     }).then(async (response) => {
       const responseJson = await response.json();
@@ -63,7 +63,7 @@ function App() {
         );
       }
       return (<>{" "}</>)
-      
+
       case "error":
         return (
           <div>

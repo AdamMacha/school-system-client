@@ -61,7 +61,7 @@ export default function StudentGradeForm({ student, subject, classroom, show, se
     }
 
     setStudentAddGradeCall({ state: 'pending' });
-    const res = await fetch(`http://localhost:3000/grade/${grade ? 'update' : 'create'}`, {
+    const res = await fetch(`https://schoolsystem-server-c1f6c7cfb830.herokuapp.com//grade/${grade ? 'update' : 'create'}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
